@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro dei voti</title>
+    <script src="dist/main.js" defer></script>
+</head>
+
+<body>
+    <h1>Registro dei voti</h1>
+    <h2>Inserimento alunno</h2>
+    <label for="nome">Nome dell'alunno:</label>
+    <input type="text" id="nome">
+    <br><br>
+    <label for="voto">Voto (da 1 a 10):</label>
+    <input type="number" id="voto" min="1" max="10" step="1">
+    <br><br>
+    <button type="button" onclick="registra()">Registra</button>
+    <p id="messaggio"></p>
+    <hr>
+    <h2>Giudizio dell'alunno</h2>
+    <img id="immagine"; src="images/semaforo.svg"; alt="Semaforo"; width="120">
+    <hr>
+    <h2>Elenco dei voti registrati</h2>
+    <ul id="elenco"></ul>
+    <hr>
+    <h2>Riepilogo dei giudizi</h2>
+
+    <table id="riepilogo" border="1">
+        <tr>
+            <th>Giudizio</th>
+            <th>Numero di voti</th>
+        </tr>
+        <tr>
+            <td>Insufficiente</td>
+            <td id="conta-insufficiente">0</td>
+        </tr>
+        <tr>
+            <td>Sufficiente</td>
+            <td id="conta-sufficiente">0</td>
+        </tr>
+        <tr>
+            <td>Buono</td>
+            <td id="conta-buono">0</td>
+        </tr>
+        <tr>
+            <td>Ottimo</td>
+            <td id="conta-ottimo">0</td>
+        </tr>
+    </table>
+</body>
+</html>
